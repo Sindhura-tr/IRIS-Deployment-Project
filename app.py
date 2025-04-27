@@ -45,7 +45,7 @@ pet_wid = st.number_input("Please enter a Petal Width:",min_value=0.00,step=0.01
 submit = st.button("Predict the Species",type="primary")
 
 # After the button is clicked, load the model joblib file
-model = joblib.load("/workspaces/IRIS-Deployment-Project/Notebook/model.joblib")
+model = joblib.load("Notebook/model.joblib")
 if submit:
     pred,prob = predict_results(model,sep_len,sep_wid,pet_len,pet_wid)
     st.subheader(f"Prediction : {pred}")
