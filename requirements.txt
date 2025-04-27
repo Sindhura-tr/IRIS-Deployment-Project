@@ -2,8 +2,7 @@ numpy
 pandas
 matplotlib
 seaborn
-plotly
-nbformat
-requests
-beautifulsoup4
+scikit-learn
+joblib
 ipykernel
+streamlit
